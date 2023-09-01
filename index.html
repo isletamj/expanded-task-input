@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-  <script src="https://kit.fontawesome.com/dedfe1267c.js" crossorigin="anonymous"></script>
-  <title>Expanded Task Input</title>
-</head>
-<body>
-  <div class="container">
-  <div>
-    <div class="input-frame">
-      <div class="inputs">
-        <input class="title-input" type="text" name="title" placeholder="Title">
-        <textarea class="description-input" name="description" rows="3" placeholder="Description"></textarea>
-        <div class="date-input-container">
-          Due date:
-          <input id="date-input" name="date" type="date">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanded Task Input</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/dedfe1267c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="input-frame">
+          <div class="inputs">
+            <input
+              class="title-input"
+              type="text"
+              name="title"
+              placeholder="Title"
+            />
+            <textarea
+              class="description-input"
+              name="description"
+              rows="3"
+              placeholder="Description"
+            ></textarea>
+            <div class="date-input-container">
+              Due date:
+              <input id="date-input" name="date" type="date" />
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="add-button">+</div>
+            <div class="caret-up">
+              <i class="caret-up-icon fa-solid fa-angle-up"></i>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="buttons">
-        <div class="add-button">+</div>
-        <div class="caret-up"><i class="caret-up-icon fa-solid fa-angle-up"></i></div>
-      </div>
     </div>
-  </div>
-</div>
-</body>
+  </body>
 </html>
-
